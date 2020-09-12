@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Event Container -->
+    <div id="toggle">
+        <i class="fas fa-plus"></i>
+        Add a New Event
+    </div>
+    <div class = 'container' id = "event-container" class="container">
+        <h1 id="event-heading"></h1>
+        <div id="countdown-container"></div>
+        <h2 id="to-go">To go !!!</h2>
+    </div>
+
+    <!-- Input Container -->
+    <div class="container" id="input-container">
+        <h1>Add a New Upcoming Event</h1>
+        <form id="input-form">
+            <label for="name-input">Add an Event Name:</label>
+            <input id = "name-input" type="text" class="input-field" placeholder="Event Name" required>
+            <label for="date-input">Add an Event Date: </label>
+            <input id = "date-input" type="date" class="input-field" placeholder="Event Date" required>
+            <label for="url-input">Add an Background Image: </label>
+            <input id = "url-input" type="text" class="input-field" placeholder="Image URL" required>
+            <input type="submit" id="input-submit">
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
